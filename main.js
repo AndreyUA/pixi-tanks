@@ -1,3 +1,4 @@
+import "normalize.css";
 import { Application } from "pixi.js";
 
 // Create the application
