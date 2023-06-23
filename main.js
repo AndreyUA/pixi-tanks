@@ -1,6 +1,6 @@
 import "normalize.css";
 import { Application, Assets } from "pixi.js";
-import { assetsMap } from "./js/assetsMap.js";
+import { manifest } from "./js/assetsMap.js";
 
 // Create the application
 const app = new Application({
@@ -10,5 +10,7 @@ const app = new Application({
   view: document.getElementById("canvas"),
 });
 
-// TODO: import it
-// Assets.load(assetsMap.sprites.);
+await Assets.init({ manifest });
+const tankAssets = await Assets.loadBundle("tank");
+
+console.log(tankAssets);

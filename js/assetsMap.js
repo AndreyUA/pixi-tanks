@@ -1,26 +1,35 @@
-export const assetsMap = {
-  sprites: [
+export const manifest = {
+  bundles: [
     {
-      name: "GunConnectorD",
-      url: "./public/assets/parts/gun_connectors/GunConnectorD.png",
-    },
-    { name: "HeavyGunB", url: "./public/assets/parts/guns/HeavyGunB.png" },
-    { name: "HeavyHullB", url: "./public/assets/parts/hulls/HeavyHullB.png" },
-    {
-      name: "HeavyTowerB",
-      url: "./public/assets/parts/towers/HeavyTowerB.png",
-    },
-    {
-      name: "TrackСFrame1",
-      url: "./public/assets/parts/tracks/TrackСFrame1.png",
-    },
-    {
-      name: "TrackСFrame2",
-      url: "./public/assets/parts/tracks/TrackСFrame2.png",
-    },
-    {
-      name: "MediumShell",
-      url: "./public/assets/parts/bullets/MediumShell.png",
+      name: "tank",
+      assets: [
+        {
+          name: "gunConnectorD",
+          srcs: "/assets/parts/gun_connectors/GunConnectorD.png",
+        },
+
+        { name: "heavyGunB", srcs: "/assets/parts/guns/HeavyGunB.png" },
+        {
+          name: "heavyHullB",
+          srcs: "/assets/parts/hulls/HeavyHullB.png",
+        },
+        {
+          name: "heavyTowerB",
+          srcs: "/assets/parts/towers/HeavyTowerB.png",
+        },
+        {
+          name: "trackСFrame1",
+          srcs: "/assets/parts/tracks/TrackСFrame1.png",
+        },
+        {
+          name: "trackСFrame2",
+          srcs: "/assets/parts/tracks/TrackСFrame2.png",
+        },
+        {
+          name: "mediumShell",
+          srcs: "/assets/parts/bullets/MediumShell.png",
+        },
+      ],
     },
   ],
 };
